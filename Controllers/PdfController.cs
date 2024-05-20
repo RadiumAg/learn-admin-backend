@@ -1,6 +1,7 @@
 using learn_admin_backend.Database;
 using learn_admin_backend.Dto.Pdf;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq.Expressions;
 
 namespace learn_admin_backend.Controllers
 {
@@ -26,7 +27,6 @@ namespace learn_admin_backend.Controllers
         {
             this.learnAdminContex.Pdfs.Add(data);
             await this.learnAdminContex.SaveChangesAsync();
-            Console.WriteLine(nameof(CreatePdps));
             return CreatedAtAction(nameof(CreatePdps), new { id = data.Id });
         }
 
@@ -36,10 +36,10 @@ namespace learn_admin_backend.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("QueryPdfAll")]
-        public ActionResult<Pdf> QueryPdfAll()
+        public ActionResult<IEnumerable<Pdf>> QueryPdfAll([FromQuery] QueryPdfDto queryPdfDto)
         {
-            this.learnAdminContex.Pdfs.Find(1);
-            return CreatedAtAction(nameof(Pdf), new { id = 1 });
+            var result = this.learnAdminContex.Pdfs.Skip(queryPdfDto.PageNumber * queryPdfDto.PageSize).Take(queryPdfDto.PageSize).ToList();
+            return result;
         }
     }
 }
