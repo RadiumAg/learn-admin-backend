@@ -25,9 +25,9 @@ namespace learn_admin_backend.Controllers
         [Route("CreatePdps")]
         public async Task<IActionResult> CreatePdps([FromBody] CreatePdpsDto data)
         {
-            this.learnAdminContex.Pdfs.Add(data);
+            var result = await this.learnAdminContex.Pdfs.AddAsync(new Pdf { Name = data.Name, Url = data.Url });
             await this.learnAdminContex.SaveChangesAsync();
-            return CreatedAtAction(nameof(CreatePdps), new { id = data.Id });
+            return CreatedAtAction(nameof(CreatePdps), new { id = result.CurrentValues.GetValue<int>("Id") });
         }
 
         /// <summary>

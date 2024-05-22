@@ -1,12 +1,15 @@
-﻿namespace learn_admin_backend.Database
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace learn_admin_backend.Database
 {
     public class Pdf
     {
 
         /// <summary>
-        ///  id
+        /// Id
         /// </summary>
-        public required string Id { get; set; }
+
+        public int Id { get; set; }
 
         /// <summary>
         /// 名称
