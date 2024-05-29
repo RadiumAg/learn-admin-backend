@@ -2,10 +2,10 @@
 {
     public class Response<T>
     {
-        public int? StatusCode { get; set; } = 200;
+        public bool? success { get; set; }
 
-        public T? Data { get; set; }
+        public T? response { get; set; }
 
-        public String? ErrorMessage { get; set; } = "";
+        public string? msg { get; set; } = "";
     }
 }
