@@ -33,25 +33,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.Use(async (context, next) =>
-{
-
-    if (context.Response.StatusCode == 200)
-    {
-        var response = new Reponse<dynamic>()
-        {
-            Data = context.Response.Body,
-            ErrorMessage = "success"
-        };
-
-
-    }else if(context.Response.StatusCode == 500)
-    {
-
-    }
-    await next(context);
-});
-
 app.Run();
 
 

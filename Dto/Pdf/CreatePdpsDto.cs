@@ -13,4 +13,11 @@ namespace learn_admin_backend.Dto.Pdf
         /// </summary>
         public required string Url { get; set; }
     }
+
+
+    public class CreatePdpsResponseDto
+    {
+        public int Id { get; set; }
+
+    }
 }

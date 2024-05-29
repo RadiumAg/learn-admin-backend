@@ -1,10 +1,11 @@
 using learn_admin_backend.Database;
 using learn_admin_backend.Dto.Pdf;
+using learn_admin_backend.Share;
 using Microsoft.AspNetCore.Mvc;
-using System.Linq.Expressions;
 
 namespace learn_admin_backend.Controllers
 {
+
     [ApiController]
     [Route("[controller]")]
     public class PdfController : ControllerBase
@@ -23,11 +24,17 @@ namespace learn_admin_backend.Controllers
         /// <returns></returns>
         [HttpPost]
         [Route("CreatePdps")]
-        public async Task<IActionResult> CreatePdps([FromBody] CreatePdpsDto data)
+        public async Task<Response<CreatePdpsResponseDto>> CreatePdps([FromBody] CreatePdpsDto data)
         {
             var result = await this.learnAdminContex.Pdfs.AddAsync(new Pdf { Name = data.Name, Url = data.Url });
             await this.learnAdminContex.SaveChangesAsync();
-            return CreatedAtAction(nameof(CreatePdps), new { id = result.CurrentValues.GetValue<int>("Id") });
+            return new Response<CreatePdpsResponseDto>
+            {
+                Data = new CreatePdpsResponseDto
+                {
+                    Id = result.CurrentValues.GetValue<int>("Id")
+                }
+            };
         }
 
         /// <summary>
@@ -36,10 +43,13 @@ namespace learn_admin_backend.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("QueryPdfAll")]
-        public ActionResult<IEnumerable<Pdf>> QueryPdfAll([FromQuery] QueryPdfDto queryPdfDto)
+        public Response<List<Pdf>> QueryPdfAll([FromQuery] QueryPdfDto queryPdfDto)
         {
-            var result = this.learnAdminContex.Pdfs.Skip(queryPdfDto.PageNumber * queryPdfDto.PageSize).Take(queryPdfDto.PageSize).ToList();
-            return result;
+            List<Pdf> result = this.learnAdminContex.Pdfs.Skip(queryPdfDto.PageNumber * queryPdfDto.PageSize).Take(queryPdfDto.PageSize).ToList();
+            return new Response<List<Pdf>>
+            {
+                Data = result
+            };
         }
     }
 }
