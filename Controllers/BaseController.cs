@@ -6,13 +6,25 @@ namespace learn_admin_backend.Controllers
     public class BaseController : ControllerBase
     {
         [NonAction]
-        public Response<T> Success<T>(T data, string msg = "成功")
+        public MessageModel<T> Success<T>(T data, string msg = "成功")
         {
-            return new Response<T>()
+            return new MessageModel<T>()
             {
-                success = true,
-                msg = msg,
-                response = data,
+                Success = true,
+                Msg = msg,
+                Response = data,
+            };
+        }
+
+
+        [NonAction]
+        public MessageModel<T> Failed<T>(T data, string msg = "失败")
+        {
+            return new MessageModel<T>()
+            {
+                Success = false,
+                Msg = msg,
+                Response = data,
             };
         }
 

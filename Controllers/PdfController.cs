@@ -24,7 +24,7 @@ namespace learn_admin_backend.Controllers
         /// <returns></returns>
         [HttpPost]
         [Route("CreatePdps")]
-        public async Task<Response<CreatePdpsResponseDto>> CreatePdps([FromBody] CreatePdpsDto data)
+        public async Task<MessageModel<CreatePdpsResponseDto>> CreatePdps([FromBody] CreatePdpsDto data)
         {
             var result = await this.learnAdminContex.Pdfs.AddAsync(new Pdf { Name = data.Name, Url = data.Url });
             await this.learnAdminContex.SaveChangesAsync();
@@ -37,7 +37,7 @@ namespace learn_admin_backend.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("QueryPdfAll")]
-        public Response<List<Pdf>> QueryPdfAll([FromQuery] QueryPdfDto queryPdfDto)
+        public MessageModel<List<Pdf>> QueryPdfAll([FromQuery] QueryPdfDto queryPdfDto)
         {
             List<Pdf> result = this.learnAdminContex.Pdfs.Skip(queryPdfDto.PageNumber * queryPdfDto.PageSize).Take(queryPdfDto.PageSize).ToList();
             return this.Success(result);
