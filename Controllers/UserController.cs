@@ -1,7 +1,6 @@
 ﻿using learn_admin_backend.Database;
-using learn_admin_backend.Dto.Pdf;
+using learn_admin_backend.Dto.User;
 using learn_admin_backend.Share;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace learn_admin_backend.Controllers
@@ -25,9 +24,10 @@ namespace learn_admin_backend.Controllers
         /// <returns></returns>
         [HttpPost]
         [Route("GetUserInfo")]
-        public async Task<MessageModel<CreatePdpsResponseDto>> GetUserInfo([FromBody] CreatePdpsDto data)
+        public MessageModel<List<User>> GetUserInfo([FromBody] GetUserInfoDto data)
         {
-           
+            var result = this.learnAdminContex.Users.Where((user) => user.Account == data.Account && user.Password == data.Password).ToList();
+            return Success(result);
         }
     }
 }
