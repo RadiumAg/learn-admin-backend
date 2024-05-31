@@ -6,6 +6,6 @@
 
         public T? Data { get; set; }
 
-        public string? Msg { get; set; } = "";
+        public String? Msg { get; set; } = "";
     }
 }

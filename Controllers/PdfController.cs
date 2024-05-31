@@ -1,11 +1,12 @@
 using learn_admin_backend.Database;
 using learn_admin_backend.Dto.Pdf;
 using learn_admin_backend.Share;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace learn_admin_backend.Controllers
 {
-
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class PdfController : BaseController

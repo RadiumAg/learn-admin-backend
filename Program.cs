@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,15 +16,13 @@ builder.Services.AddDbContext<LearnAdminContext>(dbContext =>
     .EnableServiceProviderCaching()
     .EnableDetailedErrors();
 });
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
+builder.Services.AddAuthentication().AddCookie(options =>
 {
     options.ExpireTimeSpan = TimeSpan.FromDays(2);
     options.SlidingExpiration = true;
-    options.AccessDeniedPath = "/Forbidden/";
 });
 
 var app = builder.Build();
-
 
 
 // Configure the HTTP request pipeline.
