@@ -4,7 +4,7 @@
     {
         public bool? Success { get; set; }
 
-        public T? Response { get; set; }
+        public T? Data { get; set; }
 
         public string? Msg { get; set; } = "";
     }

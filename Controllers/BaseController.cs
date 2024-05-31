@@ -12,7 +12,7 @@ namespace learn_admin_backend.Controllers
             {
                 Success = true,
                 Msg = msg,
-                Response = data,
+                Data = data,
             };
         }
 
@@ -24,7 +24,7 @@ namespace learn_admin_backend.Controllers
             {
                 Success = false,
                 Msg = msg,
-                Response = data,
+                Data = data,
             };
         }
 

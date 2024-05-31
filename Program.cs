@@ -1,5 +1,5 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
-using learn_admin_backend.Share;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +17,13 @@ builder.Services.AddDbContext<LearnAdminContext>(dbContext =>
     .EnableServiceProviderCaching()
     .EnableDetailedErrors();
 });
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
+{
+    options.ExpireTimeSpan = TimeSpan.FromDays(2);
+    options.SlidingExpiration = true;
+    options.AccessDeniedPath = "/Forbidden/";
+});
+
 var app = builder.Build();
 
 
@@ -28,7 +35,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-
+app.UseCookiePolicy(new CookiePolicyOptions
+{
+    MinimumSameSitePolicy = SameSiteMode.Strict,
+});
+app.UseAuthorization();
 app.UseAuthorization();
 
 app.MapControllers();
