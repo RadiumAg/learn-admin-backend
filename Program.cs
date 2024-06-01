@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,10 +17,26 @@ builder.Services.AddDbContext<LearnAdminContext>(dbContext =>
     .EnableServiceProviderCaching()
     .EnableDetailedErrors();
 });
-builder.Services.AddAuthentication().AddCookie(options =>
+builder.Services.AddAuthentication((options) =>
+{
+    options.RequireAuthenticatedSignIn = false;
+
+}).AddCookie(options =>
 {
     options.ExpireTimeSpan = TimeSpan.FromDays(2);
-    options.SlidingExpiration = true;
+    options.Events = new CookieAuthenticationEvents()
+    {
+        OnRedirectToReturnUrl = context =>
+        {
+            context.Response.StatusCode = 401;
+            return Task.CompletedTask;
+        },
+        OnRedirectToLogin = cotext =>
+        {
+            cotext.Response.StatusCode = 401;
+            return Task.CompletedTask;
+        },
+    };
 });
 
 var app = builder.Build();

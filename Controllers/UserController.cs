@@ -62,13 +62,15 @@ namespace learn_admin_backend.Controllers
                     new Claim(ClaimTypes.Role, "Administorator")
                 };
 
-                var authProperties = new AuthenticationProperties { };
+                var authProperties = new AuthenticationProperties {
+                };
                 var claimsIdentity = new ClaimsIdentity(claims);
 
                 await HttpContext.SignInAsync(
                            CookieAuthenticationDefaults.AuthenticationScheme,
                             new ClaimsPrincipal(claimsIdentity),
                             authProperties);
+
                 return Success("");
 
             }
