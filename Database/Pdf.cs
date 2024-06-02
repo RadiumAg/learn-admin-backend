@@ -8,7 +8,6 @@ namespace learn_admin_backend.Database
         /// <summary>
         /// Id
         /// </summary>
-
         public int Id { get; set; }
 
         /// <summary>

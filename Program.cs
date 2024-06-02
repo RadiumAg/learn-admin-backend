@@ -20,10 +20,12 @@ builder.Services.AddDbContext<LearnAdminContext>(dbContext =>
 builder.Services.AddAuthentication((options) =>
 {
     options.RequireAuthenticatedSignIn = false;
+    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
 
 }).AddCookie(options =>
 {
     options.ExpireTimeSpan = TimeSpan.FromDays(2);
+    options.SlidingExpiration = true;
     options.Events = new CookieAuthenticationEvents()
     {
         OnRedirectToReturnUrl = context =>
@@ -31,11 +33,16 @@ builder.Services.AddAuthentication((options) =>
             context.Response.StatusCode = 401;
             return Task.CompletedTask;
         },
-        OnRedirectToLogin = cotext =>
+        OnRedirectToLogin = context =>
         {
-            cotext.Response.StatusCode = 401;
+            context.Response.StatusCode = 401;
             return Task.CompletedTask;
         },
+        OnRedirectToAccessDenied = context =>
+        {
+            context.Response.StatusCode = 401;
+            return Task.CompletedTask;
+        }
     };
 });
 

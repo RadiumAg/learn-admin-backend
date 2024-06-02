@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 
 namespace learn_admin_backend.Controllers
 {
@@ -20,6 +21,7 @@ namespace learn_admin_backend.Controllers
             this.learnAdminContex = learnAdminContex;
         }
 
+        [Authorize]
         [HttpPost]
         [Route("CreateUserInfo")]
         public MessageModel<string> CreateUser([FromBody] CreateUserInfoDto userData)
@@ -32,13 +34,13 @@ namespace learn_admin_backend.Controllers
                 Password = userData.Password,
             };
 
-
             this.learnAdminContex.Users.Add(user);
             this.learnAdminContex.SaveChanges();
 
             return Success("");
         }
 
+        [Authorize]
         [HttpPost]
         [Route("GetUserInfo")]
         public MessageModel<string> GetUserInfo([FromBody] GetUserInfoDto data)
@@ -59,20 +61,13 @@ namespace learn_admin_backend.Controllers
             {
                 var claims = new List<Claim> {
                     new Claim(ClaimTypes.Name, user.Name),
-                    new Claim(ClaimTypes.Role, "Administorator")
-                };
-
-                var authProperties = new AuthenticationProperties {
+                    new Claim(ClaimTypes.Role, nameof(Role.Administorator))
                 };
                 var claimsIdentity = new ClaimsIdentity(claims);
-
                 await HttpContext.SignInAsync(
                            CookieAuthenticationDefaults.AuthenticationScheme,
-                            new ClaimsPrincipal(claimsIdentity),
-                            authProperties);
-
+                            new ClaimsPrincipal(claimsIdentity));
                 return Success("");
-
             }
             else
             {
