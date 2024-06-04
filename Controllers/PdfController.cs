@@ -8,7 +8,7 @@ namespace learn_admin_backend.Controllers
 {
     [Authorize(Roles = nameof(Role.Administorator))]
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class PdfController : BaseController
     {
         public readonly LearnAdminContext learnAdminContex;
@@ -25,7 +25,7 @@ namespace learn_admin_backend.Controllers
         /// <returns></returns>
         [HttpPost]
         [Route("CreatePdps")]
-        public async Task<MessageModel<CreatePdpsResponseDto>> CreatePdps([FromBody] CreatePdpsDto data)
+        public async Task<MessageModel<CreatePdpsResponseDto>> CreatePdp([FromBody] CreatePdpsDto data)
         {
             var result = await this.learnAdminContex.Pdfs.AddAsync(new Pdf { Name = data.Name, Url = data.Url });
             await this.learnAdminContex.SaveChangesAsync();

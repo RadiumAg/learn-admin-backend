@@ -18,13 +18,37 @@ namespace learn_admin_backend.Controllers
 
 
         [NonAction]
-        public MessageModel<T> Failed<T>(T data, string msg = "失败")
+        public MessageModel<T> Fail<T>(T data, string msg = "失败")
         {
             return new MessageModel<T>()
             {
                 Success = false,
                 Msg = msg,
                 Data = data,
+            };
+        }
+
+
+        [NonAction]
+        public MessageModel Success(string msg = "成功")
+        {
+            return new MessageModel()
+            {
+                Success = true,
+                Msg = msg,
+                Data = null,
+            };
+
+        }
+
+        [NonAction]
+        public MessageModel Fail(string msg = "失败")
+        {
+            return new MessageModel()
+            {
+                Success = true,
+                Msg = msg,
+                Data = null,
             };
         }
 

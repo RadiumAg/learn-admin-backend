@@ -24,7 +24,7 @@ namespace learn_admin_backend.Controllers
         [Authorize]
         [HttpPost]
         [Route("CreateUserInfo")]
-        public MessageModel<string> CreateUser([FromBody] CreateUserInfoDto userData)
+        public MessageModel CreateUser([FromBody] CreateUserInfoDto userData)
         {
             var user = new User
             {
@@ -37,21 +37,21 @@ namespace learn_admin_backend.Controllers
             this.learnAdminContex.Users.Add(user);
             this.learnAdminContex.SaveChanges();
 
-            return Success("");
+            return Success();
         }
 
         [Authorize]
         [HttpPost]
         [Route("GetUserInfo")]
-        public MessageModel<string> GetUserInfo([FromBody] GetUserInfoDto data)
+        public MessageModel GetUserInfo([FromBody] GetUserInfoDto data)
         {
             var result = this.learnAdminContex.Users.Where((user) => user.Account == data.Account && user.Password == data.Password).ToList();
-            return Success("");
+            return Success();
         }
 
         [HttpPost]
         [Route("Login")]
-        public async Task<MessageModel<string>> Login([FromQuery] string account, [FromQuery] string password)
+        public async Task<MessageModel> Login([FromQuery] string account, [FromQuery] string password)
         {
             var user = await this.learnAdminContex.Users
                 .Where(user => user.Account == account && user.Password == password)
@@ -67,11 +67,11 @@ namespace learn_admin_backend.Controllers
                 await HttpContext.SignInAsync(
                            CookieAuthenticationDefaults.AuthenticationScheme,
                             new ClaimsPrincipal(claimsIdentity));
-                return Success("");
+                return Success();
             }
             else
             {
-                return Failed("");
+                return Fail();
             }
         }
 
