@@ -1,4 +1,7 @@
 using LearnAdmin.Dto.Pdf;
+using LearnAdmin.Share;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace LearnAdmin.Controllers
 {
