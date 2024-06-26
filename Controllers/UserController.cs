@@ -1,6 +1,6 @@
-﻿using learn_admin_backend.Database;
-using learn_admin_backend.Dto.User;
-using learn_admin_backend.Share;
+﻿using LearnAdmin.Database;
+using LearnAdmin.Dto.User;
+using LearnAdmin.Share;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 
-namespace learn_admin_backend.Controllers
+namespace LearnAdmin.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

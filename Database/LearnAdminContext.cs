@@ -1,5 +1,5 @@
-﻿using learn_admin_backend.Database;
-using Microsoft.EntityFrameworkCore;
+﻿using LearnAdmin.Model.Models;
+
 
 public class LearnAdminContext : DbContext
 {

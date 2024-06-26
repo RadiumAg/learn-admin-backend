@@ -1,10 +1,6 @@
-using learn_admin_backend.Database;
-using learn_admin_backend.Dto.Pdf;
-using learn_admin_backend.Share;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+using LearnAdmin.Dto.Pdf;
 
-namespace learn_admin_backend.Controllers
+namespace LearnAdmin.Controllers
 {
     [Authorize(Roles = nameof(Role.Administorator))]
     [ApiController]
@@ -19,7 +15,7 @@ namespace learn_admin_backend.Controllers
         }
 
         /// <summary>
-        ///  ´´½¨Pdf
+        ///  ï¿½ï¿½ï¿½ï¿½Pdf
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
@@ -33,7 +29,7 @@ namespace learn_admin_backend.Controllers
         }
 
         /// <summary>
-        ///  ²éÑ¯ËùÓÐPdf
+        ///  ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½Pdf
         /// </summary>
         /// <returns></returns>
         [HttpGet]

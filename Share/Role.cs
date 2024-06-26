@@ -1,4 +1,4 @@
-﻿namespace learn_admin_backend.Share
+﻿namespace LearnAdmin.Share
 {
     public enum Role
     {

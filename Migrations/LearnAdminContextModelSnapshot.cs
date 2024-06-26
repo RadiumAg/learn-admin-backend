@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace learn_admin_backend.Migrations
+namespace LearnAdmin.Migrations
 {
     [DbContext(typeof(LearnAdminContext))]
     partial class LearnAdminContextModelSnapshot : ModelSnapshot

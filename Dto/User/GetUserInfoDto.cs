@@ -1,4 +1,4 @@
-﻿namespace learn_admin_backend.Dto.User
+﻿namespace LearnAdmin.Dto.User
 {
     public class GetUserInfoDto
     {

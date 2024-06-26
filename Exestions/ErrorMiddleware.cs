@@ -1,7 +1,7 @@
-﻿using learn_admin_backend.Exestions;
+﻿using LearnAdmin.Exestions;
 using System.Globalization;
 
-namespace learn_admin_backend.Exestions
+namespace LearnAdmin.Exestions
 {
     public class ErrorMiddleware
     {

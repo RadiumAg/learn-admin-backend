@@ -1,7 +1,6 @@
-﻿using learn_admin_backend.Share;
-using Microsoft.AspNetCore.Mvc;
+﻿using LearnAdmin.Share;
 
-namespace learn_admin_backend.Controllers
+namespace LearnAdmin.Controllers
 {
     public class BaseController : ControllerBase
     {

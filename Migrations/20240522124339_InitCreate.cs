@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace learn_admin_backend.Migrations
+namespace LearnAdmin.Migrations
 {
     /// <inheritdoc />
     public partial class InitCreate : Migration

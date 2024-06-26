@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace learn_admin_backend.Migrations
+namespace LearnAdmin.Migrations
 {
     /// <inheritdoc />
     public partial class UserChange : Migration

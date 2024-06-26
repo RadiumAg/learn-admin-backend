@@ -1,5 +1,5 @@
 ﻿
-namespace learn_admin_backend.Dto.Pdf
+namespace LearnAdmin.Dto.Pdf
 {
     public class CreatePdpsDto
     {
