@@ -12,9 +12,9 @@ namespace LearnAdmin.Repositories
 		/// </summary>
 		/// <param name="entity">实体类</param>
 		/// <param name="autoSave">是否马上更新到数据库</param>
-		/// <param name="token">取消令牌（当CancellationToken是取消状态，Task内部未启动的任务不会启用新线程）</param>
+		/// <param name="cancellationToken">取消令牌（当CancellationToken是取消状态，Task内部未启动的任务不会启用新线程）</param>
 		/// <returns></returns>
-		Task<TEntity> InsertAsync(TEntity entity, bool autoSave = false, CancellationToken token = default);
+		Task<TEntity> InsertAsync(TEntity entity, bool autoSave = false, CancellationToken cancellationToken = default);
 
 		/// <summary>
 		/// 功能描述：批量插入实体
@@ -23,7 +23,7 @@ namespace LearnAdmin.Repositories
 		/// <param name="autoSave"></param>
 		/// <param name="cancellationToken"></param>
 		/// <returns></returns>
-		Task<TEntity> InsertManyAsync(TEntity entiry, bool autoSave = false, CancellationToken cancellationToken = default);
+		Task InsertManyAsync(IEnumerable<TEntity> entiries, bool autoSave = false, CancellationToken cancellationToken = default);
 
 		/// <summary>
 		/// 功能描述：更新实体
