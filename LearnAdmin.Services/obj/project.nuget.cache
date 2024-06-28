@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m12wzZFTHrqgT6zpGgSObkzutd/mIG7Pny701wnKpQiRAHX59+Y8Ys5o40hZTtsmNCfMU9HmeMrKpaAIn2jopw==",
+  "dgSpecHash": "FMa9/oo0ldS3+QphQTlDd+wQqz3zvgw4cEo/6vVtr8gPLHLj/OH+BTFMNXs2LJsuzMGJuM8pCEwmeJP2ygMnEg==",
   "success": true,
-  "projectFilePath": "/Users/agradium/Desktop/work/LearnAdmin.Services/LearnAdmin.Services.csproj",
+  "projectFilePath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Services/LearnAdmin.Services.csproj",
   "expectedPackageFiles": [
     "/Users/agradium/.nuget/packages/microsoft.entityframeworkcore/7.0.20/microsoft.entityframeworkcore.7.0.20.nupkg.sha512",
     "/Users/agradium/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.20/microsoft.entityframeworkcore.abstractions.7.0.20.nupkg.sha512",

@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{6F6E7C57-CE57-4DD0-A6D1-CC1342E4B90F}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <DisabledProjects>
+    <String>LearnAdmin.API.csproj</String>
+    <String>LearnAdmin.IRepositories/LearnAdmin.IRepositories.csproj</String>
+    <String>LearnAdmin.IServices/LearnAdmin.IServices.csproj</String>
+    <String>LearnAdmin.Model/LearnAdmin.Model.csproj</String>
+    <String>LearnAdminBackend.Repositories/LearnAdmin.Repositories.csproj</String>
+    <String>LearnAdmin.Services/LearnAdmin.Services.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="learn-admin-backend" expanded="True">
+            <Node name="LearnAdmin.API" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.LearnAdmin.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+</Properties>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/agradium/Desktop/work/LearnAdminBackend.Repositories/LearnAdmin.Repositories.csproj": {}
+    "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdminBackend.Repositories/LearnAdmin.Repositories.csproj": {}
   },
   "projects": {
-    "/Users/agradium/Desktop/work/LearnAdmin.IRepositories/LearnAdmin.IRepositories.csproj": {
+    "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.IRepositories/LearnAdmin.IRepositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/agradium/Desktop/work/LearnAdmin.IRepositories/LearnAdmin.IRepositories.csproj",
+        "projectUniqueName": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.IRepositories/LearnAdmin.IRepositories.csproj",
         "projectName": "LearnAdmin.IRepositories",
-        "projectPath": "/Users/agradium/Desktop/work/LearnAdmin.IRepositories/LearnAdmin.IRepositories.csproj",
+        "projectPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.IRepositories/LearnAdmin.IRepositories.csproj",
         "packagesPath": "/Users/agradium/.nuget/packages/",
-        "outputPath": "/Users/agradium/Desktop/work/LearnAdmin.IRepositories/obj/",
+        "outputPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.IRepositories/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/agradium/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/agradium/Desktop/work/LearnAdmin.Model/LearnAdmin.Model.csproj": {
-                "projectPath": "/Users/agradium/Desktop/work/LearnAdmin.Model/LearnAdmin.Model.csproj"
+              "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Model/LearnAdmin.Model.csproj": {
+                "projectPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Model/LearnAdmin.Model.csproj"
               }
             }
           }
@@ -61,14 +61,14 @@
         }
       }
     },
-    "/Users/agradium/Desktop/work/LearnAdmin.Model/LearnAdmin.Model.csproj": {
+    "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Model/LearnAdmin.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/agradium/Desktop/work/LearnAdmin.Model/LearnAdmin.Model.csproj",
+        "projectUniqueName": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Model/LearnAdmin.Model.csproj",
         "projectName": "LearnAdmin.Model",
-        "projectPath": "/Users/agradium/Desktop/work/LearnAdmin.Model/LearnAdmin.Model.csproj",
+        "projectPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Model/LearnAdmin.Model.csproj",
         "packagesPath": "/Users/agradium/.nuget/packages/",
-        "outputPath": "/Users/agradium/Desktop/work/LearnAdmin.Model/obj/",
+        "outputPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Model/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/agradium/.nuget/NuGet/NuGet.Config"
@@ -114,14 +114,14 @@
         }
       }
     },
-    "/Users/agradium/Desktop/work/LearnAdminBackend.Repositories/LearnAdmin.Repositories.csproj": {
+    "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdminBackend.Repositories/LearnAdmin.Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/agradium/Desktop/work/LearnAdminBackend.Repositories/LearnAdmin.Repositories.csproj",
+        "projectUniqueName": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdminBackend.Repositories/LearnAdmin.Repositories.csproj",
         "projectName": "LearnAdmin.Repositories",
-        "projectPath": "/Users/agradium/Desktop/work/LearnAdminBackend.Repositories/LearnAdmin.Repositories.csproj",
+        "projectPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdminBackend.Repositories/LearnAdmin.Repositories.csproj",
         "packagesPath": "/Users/agradium/.nuget/packages/",
-        "outputPath": "/Users/agradium/Desktop/work/LearnAdminBackend.Repositories/obj/",
+        "outputPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdminBackend.Repositories/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/agradium/.nuget/NuGet/NuGet.Config"
@@ -136,11 +136,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/agradium/Desktop/work/LearnAdmin.IRepositories/LearnAdmin.IRepositories.csproj": {
-                "projectPath": "/Users/agradium/Desktop/work/LearnAdmin.IRepositories/LearnAdmin.IRepositories.csproj"
+              "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.IRepositories/LearnAdmin.IRepositories.csproj": {
+                "projectPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.IRepositories/LearnAdmin.IRepositories.csproj"
               },
-              "/Users/agradium/Desktop/work/LearnAdmin.Model/LearnAdmin.Model.csproj": {
-                "projectPath": "/Users/agradium/Desktop/work/LearnAdmin.Model/LearnAdmin.Model.csproj"
+              "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Model/LearnAdmin.Model.csproj": {
+                "projectPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Model/LearnAdmin.Model.csproj"
               }
             }
           }

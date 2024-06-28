@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/agradium/Desktop/work/LearnAdmin.Model/LearnAdmin.Model.csproj",
+      "projectUniqueName": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Model/LearnAdmin.Model.csproj",
       "projectName": "LearnAdmin.Model",
-      "projectPath": "/Users/agradium/Desktop/work/LearnAdmin.Model/LearnAdmin.Model.csproj",
+      "projectPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Model/LearnAdmin.Model.csproj",
       "packagesPath": "/Users/agradium/.nuget/packages/",
-      "outputPath": "/Users/agradium/Desktop/work/LearnAdmin.Model/obj/",
+      "outputPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Model/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/agradium/.nuget/NuGet/NuGet.Config"

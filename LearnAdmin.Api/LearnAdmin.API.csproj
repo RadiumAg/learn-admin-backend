@@ -1,0 +1,159 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>learn_admin_backend</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="WeatherForecast.cs" />
+    <Compile Remove="LearnAdmin.IRepositories\IPdfRepository.cs" />
+    <Compile Remove="LearnAdmin.IRepositories\Class1.cs" />
+    <Compile Remove="LearnAdmin.IRepositories\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
+    <Compile Remove="LearnAdmin.IRepositories\obj\Debug\net7.0\LearnAdmin.IRepositories.GlobalUsings.g.cs" />
+    <Compile Remove="LearnAdmin.IRepositories\obj\Debug\net7.0\LearnAdmin.IRepositories.AssemblyInfo.cs" />
+    <Compile Remove="LearnAdmin.IServices\Class1.cs" />
+    <Compile Remove="LearnAdmin.IServices\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
+    <Compile Remove="LearnAdmin.IServices\obj\Debug\net7.0\LearnAdmin.IServices.AssemblyInfo.cs" />
+    <Compile Remove="LearnAdmin.IServices\obj\Debug\net7.0\LearnAdmin.IServices.GlobalUsings.g.cs" />
+    <Compile Remove="LearnAdminBackend.Repositories\IBaseRepository.cs" />
+    <Compile Remove="LearnAdminBackend.Repositories\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
+    <Compile Remove="LearnAdminBackend.Repositories\obj\Debug\net7.0\LearnAdmin.Repositories.AssemblyInfo.cs" />
+    <Compile Remove="LearnAdminBackend.Repositories\PdfRepository.cs" />
+    <Compile Remove="LearnAdminBackend.Repositories\obj\Debug\net7.0\LearnAdmin.Repositories.GlobalUsings.g.cs" />
+    <Compile Remove="LearnAdminBackend.Repositories\obj\Debug\net7.0\LearnAdminBackend.Repositories.GlobalUsings.g.cs" />
+    <Compile Remove="LearnAdminBackend.Repositories\obj\Debug\net7.0\LearnAdminBackend.Repositories.AssemblyInfo.cs" />
+    <Compile Remove="LearnAdmin.Services\Class1.cs" />
+    <Compile Remove="LearnAdmin.Services\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
+    <Compile Remove="LearnAdmin.Services\obj\Debug\net7.0\LearnAdmin.Services.AssemblyInfo.cs" />
+    <Compile Remove="LearnAdmin.Services\obj\Debug\net7.0\LearnAdmin.Services.GlobalUsings.g.cs" />
+    <Compile Remove="LearnAdmin.Model\MessageModel.cs" />
+    <Compile Remove="LearnAdmin.Model\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
+    <Compile Remove="LearnAdmin.Model\obj\Debug\net7.0\LearnAdmin.Model.AssemblyInfo.cs" />
+    <Compile Remove="LearnAdmin.Model\obj\Debug\net7.0\LearnAdmin.Model.GlobalUsings.g.cs" />
+    <Compile Remove="LearnAdmin.Model\Models\Pdf.cs" />
+    <Compile Remove="LearnAdmin.Model\Models\User.cs" />
+    <Compile Remove="Exestions\ErrorMiddleware.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="8.0.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LearnAdmin.Services\LearnAdmin.Services.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\LearnAdmin.Model\LearnAdmin.Model.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Database\" />
+    <None Remove="LearnAdmin.IRepositories\obj\LearnAdmin.IRepositories.csproj.nuget.g.targets" />
+    <None Remove="LearnAdmin.IRepositories\obj\LearnAdmin.IRepositories.csproj.nuget.g.props" />
+    <None Remove="LearnAdmin.IRepositories\obj\project.nuget.cache" />
+    <None Remove="LearnAdmin.IRepositories\obj\Debug\net7.0\LearnAdmin.IRepositories.AssemblyInfoInputs.cache" />
+    <None Remove="LearnAdmin.IRepositories\obj\Debug\net7.0\LearnAdmin.IRepositories.csproj.CoreCompileInputs.cache" />
+    <None Remove="LearnAdmin.IRepositories\obj\Debug\net7.0\LearnAdmin.IRepositories.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Remove="LearnAdmin.IRepositories\obj\Debug\net7.0\LearnAdmin.IRepositories.assets.cache" />
+    <None Remove="LearnAdmin.IRepositories\obj\Debug\net7.0\LearnAdmin.IRepositories.pdb" />
+    <None Remove="LearnAdmin.IRepositories\obj\Debug\net7.0\LearnAdmin.IRepositories.csproj.AssemblyReference.cache" />
+    <None Remove="LearnAdmin.IRepositories\obj\Debug\net7.0\LearnAdmin.IRepositories.dll" />
+    <None Remove="LearnAdmin.IRepositories\obj\Debug\net7.0\LearnAdmin.IRepositories.csproj.CopyComplete" />
+    <None Remove="LearnAdmin.IRepositories\obj\Debug\net7.0\LearnAdmin.IRepositories.csproj.FileListAbsolute.txt" />
+    <None Remove="LearnAdmin.IRepositories\obj\Debug\net7.0\ref\LearnAdmin.IRepositories.dll" />
+    <None Remove="LearnAdmin.IRepositories\obj\Debug\net7.0\refint\LearnAdmin.IRepositories.dll" />
+    <None Remove="LearnAdmin.IRepositories\bin\Debug\net7.0\LearnAdmin.Model.pdb" />
+    <None Remove="LearnAdmin.IRepositories\bin\Debug\net7.0\LearnAdmin.IRepositories.pdb" />
+    <None Remove="LearnAdmin.IRepositories\bin\Debug\net7.0\LearnAdmin.Model.dll" />
+    <None Remove="LearnAdmin.IRepositories\bin\Debug\net7.0\LearnAdmin.IRepositories.dll" />
+    <None Remove="LearnAdmin.IServices\obj\Debug\net7.0\LearnAdmin.IServices.AssemblyInfoInputs.cache" />
+    <None Remove="LearnAdmin.IServices\obj\project.nuget.cache" />
+    <None Remove="LearnAdmin.IServices\obj\LearnAdmin.IServices.csproj.nuget.g.props" />
+    <None Remove="LearnAdmin.IServices\obj\LearnAdmin.IServices.csproj.nuget.g.targets" />
+    <None Remove="LearnAdmin.IServices\obj\Debug\net7.0\LearnAdmin.IServices.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Remove="LearnAdmin.IServices\obj\Debug\net7.0\LearnAdmin.IServices.csproj.AssemblyReference.cache" />
+    <None Remove="LearnAdmin.IServices\obj\Debug\net7.0\LearnAdmin.IServices.assets.cache" />
+    <None Remove="LearnAdminBackend.Repositories\.DS_Store" />
+    <None Remove="LearnAdminBackend.Repositories\obj\Debug\net7.0\LearnAdmin.Repositories.assets.cache" />
+    <None Remove="LearnAdminBackend.Repositories\obj\Debug\net7.0\LearnAdmin.Repositories.AssemblyInfoInputs.cache" />
+    <None Remove="LearnAdminBackend.Repositories\bin\Debug\net7.0\LearnAdmin.Repositories.dll" />
+    <None Remove="LearnAdminBackend.Repositories\bin\Debug\net7.0\LearnAdmin.Repositories.pdb" />
+    <None Remove="LearnAdminBackend.Repositories\bin\Debug\net7.0\LearnAdmin.Model.pdb" />
+    <None Remove="LearnAdminBackend.Repositories\bin\Debug\net7.0\LearnAdmin.IRepositories.pdb" />
+    <None Remove="LearnAdminBackend.Repositories\bin\Debug\net7.0\LearnAdmin.Model.dll" />
+    <None Remove="LearnAdminBackend.Repositories\bin\Debug\net7.0\LearnAdmin.IRepositories.dll" />
+    <None Remove="LearnAdminBackend.Repositories\obj\LearnAdmin.Repositories.csproj.nuget.g.props" />
+    <None Remove="LearnAdminBackend.Repositories\obj\LearnAdmin.Repositories.csproj.nuget.g.targets" />
+    <None Remove="LearnAdminBackend.Repositories\obj\project.nuget.cache" />
+    <None Remove="LearnAdminBackend.Repositories\obj\Debug\net7.0\LearnAdmin.Repositories.csproj.FileListAbsolute.txt" />
+    <None Remove="LearnAdminBackend.Repositories\obj\Debug\net7.0\LearnAdmin.Repositories.dll" />
+    <None Remove="LearnAdminBackend.Repositories\obj\Debug\net7.0\LearnAdminBackend.Repositories.AssemblyInfoInputs.cache" />
+    <None Remove="LearnAdminBackend.Repositories\obj\Debug\net7.0\LearnAdminBackend.Repositories.csproj.AssemblyReference.cache" />
+    <None Remove="LearnAdminBackend.Repositories\obj\Debug\net7.0\LearnAdmin.Repositories.genruntimeconfig.cache" />
+    <None Remove="LearnAdminBackend.Repositories\obj\Debug\net7.0\LearnAdmin.Repositories.csproj.CopyComplete" />
+    <None Remove="LearnAdminBackend.Repositories\obj\Debug\net7.0\LearnAdmin.Repositories.pdb" />
+    <None Remove="LearnAdminBackend.Repositories\obj\Debug\net7.0\LearnAdmin.Repositories.csproj.CoreCompileInputs.cache" />
+    <None Remove="LearnAdminBackend.Repositories\obj\Debug\net7.0\LearnAdmin.Repositories.csproj.AssemblyReference.cache" />
+    <None Remove="LearnAdminBackend.Repositories\obj\Debug\net7.0\LearnAdminBackend.Repositories.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Remove="LearnAdminBackend.Repositories\obj\Debug\net7.0\LearnAdmin.Repositories.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Remove="LearnAdminBackend.Repositories\obj\Debug\net7.0\ref\LearnAdmin.Repositories.dll" />
+    <None Remove="LearnAdminBackend.Repositories\obj\Debug\net7.0\refint\LearnAdmin.Repositories.dll" />
+    <None Remove="LearnAdmin.Services\obj\Debug\net7.0\LearnAdmin.Services.AssemblyInfoInputs.cache" />
+    <None Remove="LearnAdmin.Services\obj\Debug\net7.0\LearnAdmin.Services.assets.cache" />
+    <None Remove="LearnAdmin.Services\obj\LearnAdmin.Services.csproj.nuget.g.props" />
+    <None Remove="LearnAdmin.Services\obj\LearnAdmin.Services.csproj.nuget.g.targets" />
+    <None Remove="LearnAdmin.Services\obj\project.nuget.cache" />
+    <None Remove="LearnAdmin.Services\obj\Debug\net7.0\LearnAdmin.Services.csproj.AssemblyReference.cache" />
+    <None Remove="LearnAdmin.Services\obj\Debug\net7.0\LearnAdmin.Services.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Remove="LearnAdmin.Model\.DS_Store" />
+    <None Remove="LearnAdmin.Model\obj\LearnAdmin.Model.csproj.nuget.g.targets" />
+    <None Remove="LearnAdmin.Model\obj\project.nuget.cache" />
+    <None Remove="LearnAdmin.Model\obj\LearnAdmin.Model.csproj.nuget.g.props" />
+    <None Remove="LearnAdmin.Model\obj\Debug\net7.0\LearnAdmin.Model.csproj.CoreCompileInputs.cache" />
+    <None Remove="LearnAdmin.Model\obj\Debug\net7.0\LearnAdmin.Model.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Remove="LearnAdmin.Model\obj\Debug\net7.0\LearnAdmin.Model.pdb" />
+    <None Remove="LearnAdmin.Model\obj\Debug\net7.0\LearnAdmin.Model.csproj.FileListAbsolute.txt" />
+    <None Remove="LearnAdmin.Model\obj\Debug\net7.0\LearnAdmin.Model.assets.cache" />
+    <None Remove="LearnAdmin.Model\obj\Debug\net7.0\LearnAdmin.Model.AssemblyInfoInputs.cache" />
+    <None Remove="LearnAdmin.Model\obj\Debug\net7.0\LearnAdmin.Model.dll" />
+    <None Remove="LearnAdmin.Model\obj\Debug\net7.0\LearnAdmin.Model.csproj.AssemblyReference.cache" />
+    <None Remove="LearnAdmin.Model\obj\Debug\net7.0\ref\LearnAdmin.Model.dll" />
+    <None Remove="LearnAdmin.Model\obj\Debug\net7.0\refint\LearnAdmin.Model.dll" />
+    <None Remove="LearnAdmin.Model\bin\Debug\net7.0\LearnAdmin.Model.pdb" />
+    <None Remove="LearnAdmin.Model\bin\Debug\net7.0\LearnAdmin.Model.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Database\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.EntityFrameworkCore, Version=7.0.20.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="LearnAdmin.IRepositories\obj\LearnAdmin.IRepositories.csproj.nuget.dgspec.json" />
+    <Content Remove="LearnAdmin.IRepositories\obj\project.assets.json" />
+    <Content Remove="LearnAdmin.IRepositories\bin\Debug\net7.0\LearnAdmin.IRepositories.deps.json" />
+    <Content Remove="LearnAdmin.IServices\obj\project.assets.json" />
+    <Content Remove="LearnAdmin.IServices\obj\LearnAdmin.IServices.csproj.nuget.dgspec.json" />
+    <Content Remove="LearnAdminBackend.Repositories\bin\Debug\net7.0\LearnAdmin.Repositories.deps.json" />
+    <Content Remove="LearnAdminBackend.Repositories\bin\Debug\net7.0\LearnAdmin.Repositories.runtimeconfig.json" />
+    <Content Remove="LearnAdminBackend.Repositories\obj\project.assets.json" />
+    <Content Remove="LearnAdminBackend.Repositories\obj\LearnAdmin.Repositories.csproj.nuget.dgspec.json" />
+    <Content Remove="LearnAdmin.Services\obj\LearnAdmin.Services.csproj.nuget.dgspec.json" />
+    <Content Remove="LearnAdmin.Services\obj\project.assets.json" />
+    <Content Remove="LearnAdmin.Model\obj\project.assets.json" />
+    <Content Remove="LearnAdmin.Model\obj\LearnAdmin.Model.csproj.nuget.dgspec.json" />
+    <Content Remove="LearnAdmin.Model\bin\Debug\net7.0\LearnAdmin.Model.deps.json" />
+  </ItemGroup>
+</Project>

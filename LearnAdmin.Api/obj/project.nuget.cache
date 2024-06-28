@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bAqoiADoDGgnB3W3Rw0N3Kpxaqe3wq/VHi6XbNHV5uCtTdPJwZ6w1MivW6tw22Eo43k+spo2gktQTOir678NyA==",
+  "dgSpecHash": "yCARZQXy3wPXtnYJO7k4B9z/cdZlaIUWupuCx9spSOjV5BGk8aK+gLPPXW0MdG58hnchZJwTcIP97zPIGEbfQg==",
   "success": false,
-  "projectFilePath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.API.csproj",
+  "projectFilePath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Api/LearnAdmin.API.csproj",
   "expectedPackageFiles": [
     "/Users/agradium/.nuget/packages/autofac/8.0.0/autofac.8.0.0.nupkg.sha512",
     "/Users/agradium/.nuget/packages/autofac.extensions.dependencyinjection/9.0.0/autofac.extensions.dependencyinjection.9.0.0.nupkg.sha512",

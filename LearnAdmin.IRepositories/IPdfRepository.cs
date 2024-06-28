@@ -1,14 +1,11 @@
-﻿using System.Linq.Expressions;
-using LearnAdmin.Model.Models;
+﻿using LearnAdmin.Model.Models;
+using LearnAdmin.Repositories;
 
 namespace LearnAdmin.IRepositories
 {
-	public interface IPdfRepository
+	public interface IPdfRepository: IBaseRepository<Pdf>
 	{
-		void Add(Pdf pdf);
-		void Delete(Pdf pdf);
-		void Update(Pdf pdf);
-		List<Pdf> Query(Expression<Func<Pdf, bool>> whereExpression);
+		
 	} 
 }
 

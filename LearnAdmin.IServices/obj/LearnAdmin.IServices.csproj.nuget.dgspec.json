@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/agradium/Desktop/work/LearnAdmin.IServices/LearnAdmin.IServices.csproj": {}
+    "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.IServices/LearnAdmin.IServices.csproj": {}
   },
   "projects": {
-    "/Users/agradium/Desktop/work/LearnAdmin.IServices/LearnAdmin.IServices.csproj": {
+    "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.IServices/LearnAdmin.IServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/agradium/Desktop/work/LearnAdmin.IServices/LearnAdmin.IServices.csproj",
+        "projectUniqueName": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.IServices/LearnAdmin.IServices.csproj",
         "projectName": "LearnAdmin.IServices",
-        "projectPath": "/Users/agradium/Desktop/work/LearnAdmin.IServices/LearnAdmin.IServices.csproj",
+        "projectPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.IServices/LearnAdmin.IServices.csproj",
         "packagesPath": "/Users/agradium/.nuget/packages/",
-        "outputPath": "/Users/agradium/Desktop/work/LearnAdmin.IServices/obj/",
+        "outputPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.IServices/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/agradium/.nuget/NuGet/NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XqR3SDSw/anPchMlgP7Xekcb8pYDVcdPKd7UjbMX5vCmz83NfjfNV8QM7l3wC/KDWvh2cjN5/ao+E8sk/f9EvA==",
+  "dgSpecHash": "/EBwc9YfbJdiFfnYJUOAoCsMKRaY/r0Oaw2Qlp9V5zJp4D2aZJNR/D8VXMKiTTgerZfPBnBsu45guIwoLebfkQ==",
   "success": true,
-  "projectFilePath": "/Users/agradium/Desktop/work/LearnAdmin.IServices/LearnAdmin.IServices.csproj",
+  "projectFilePath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.IServices/LearnAdmin.IServices.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

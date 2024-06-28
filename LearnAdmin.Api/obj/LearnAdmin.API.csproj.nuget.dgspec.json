@@ -1,9 +1,101 @@
 {
   "format": 1,
   "restore": {
-    "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Services/LearnAdmin.Services.csproj": {}
+    "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Api/LearnAdmin.API.csproj": {}
   },
   "projects": {
+    "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Api/LearnAdmin.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Api/LearnAdmin.API.csproj",
+        "projectName": "LearnAdmin.API",
+        "projectPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Api/LearnAdmin.API.csproj",
+        "packagesPath": "/Users/agradium/.nuget/packages/",
+        "outputPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/agradium/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/sdk/7.0.316/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "netcoreapp7.0",
+            "projectReferences": {
+              "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Model/LearnAdmin.Model.csproj": {
+                "projectPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Model/LearnAdmin.Model.csproj"
+              },
+              "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Services/LearnAdmin.Services.csproj": {
+                "projectPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Services/LearnAdmin.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "netcoreapp7.0",
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.316/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.IRepositories/LearnAdmin.IRepositories.csproj": {
       "version": "1.0.0",
       "restore": {
