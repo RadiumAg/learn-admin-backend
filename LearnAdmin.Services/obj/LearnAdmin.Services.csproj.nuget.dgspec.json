@@ -1,33 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Services/LearnAdmin.Services.csproj": {}
+    "D:\\work\\learn-admin-backend\\LearnAdmin.Services\\LearnAdmin.Services.csproj": {}
   },
   "projects": {
-    "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.IRepositories/LearnAdmin.IRepositories.csproj": {
+    "D:\\work\\learn-admin-backend\\LearnAdmin.IRepositories\\LearnAdmin.IRepositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.IRepositories/LearnAdmin.IRepositories.csproj",
+        "projectUniqueName": "D:\\work\\learn-admin-backend\\LearnAdmin.IRepositories\\LearnAdmin.IRepositories.csproj",
         "projectName": "LearnAdmin.IRepositories",
-        "projectPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.IRepositories/LearnAdmin.IRepositories.csproj",
-        "packagesPath": "/Users/agradium/.nuget/packages/",
-        "outputPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.IRepositories/obj/",
+        "projectPath": "D:\\work\\learn-admin-backend\\LearnAdmin.IRepositories\\LearnAdmin.IRepositories.csproj",
+        "packagesPath": "C:\\Users\\20438\\.nuget\\packages\\",
+        "outputPath": "D:\\work\\learn-admin-backend\\LearnAdmin.IRepositories\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/agradium/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\20438\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "D:\\nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Model/LearnAdmin.Model.csproj": {
-                "projectPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Model/LearnAdmin.Model.csproj"
+              "D:\\work\\learn-admin-backend\\LearnAdmin.Model\\LearnAdmin.Model.csproj": {
+                "projectPath": "D:\\work\\learn-admin-backend\\LearnAdmin.Model\\LearnAdmin.Model.csproj"
               }
             }
           }
@@ -36,6 +43,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -52,31 +64,52 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.316/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Model/LearnAdmin.Model.csproj": {
+    "D:\\work\\learn-admin-backend\\LearnAdmin.Model\\LearnAdmin.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Model/LearnAdmin.Model.csproj",
+        "projectUniqueName": "D:\\work\\learn-admin-backend\\LearnAdmin.Model\\LearnAdmin.Model.csproj",
         "projectName": "LearnAdmin.Model",
-        "projectPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Model/LearnAdmin.Model.csproj",
-        "packagesPath": "/Users/agradium/.nuget/packages/",
-        "outputPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Model/obj/",
+        "projectPath": "D:\\work\\learn-admin-backend\\LearnAdmin.Model\\LearnAdmin.Model.csproj",
+        "packagesPath": "C:\\Users\\20438\\.nuget\\packages\\",
+        "outputPath": "D:\\work\\learn-admin-backend\\LearnAdmin.Model\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/agradium/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\20438\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "D:\\nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -89,6 +122,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -105,39 +143,60 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.316/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Services/LearnAdmin.Services.csproj": {
+    "D:\\work\\learn-admin-backend\\LearnAdmin.Services\\LearnAdmin.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Services/LearnAdmin.Services.csproj",
+        "projectUniqueName": "D:\\work\\learn-admin-backend\\LearnAdmin.Services\\LearnAdmin.Services.csproj",
         "projectName": "LearnAdmin.Services",
-        "projectPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Services/LearnAdmin.Services.csproj",
-        "packagesPath": "/Users/agradium/.nuget/packages/",
-        "outputPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Services/obj/",
+        "projectPath": "D:\\work\\learn-admin-backend\\LearnAdmin.Services\\LearnAdmin.Services.csproj",
+        "packagesPath": "C:\\Users\\20438\\.nuget\\packages\\",
+        "outputPath": "D:\\work\\learn-admin-backend\\LearnAdmin.Services\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/agradium/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\20438\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "D:\\nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdminBackend.Repositories/LearnAdmin.Repositories.csproj": {
-                "projectPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdminBackend.Repositories/LearnAdmin.Repositories.csproj"
+              "D:\\work\\learn-admin-backend\\LearnAdminBackend.Repositories\\LearnAdmin.Repositories.csproj": {
+                "projectPath": "D:\\work\\learn-admin-backend\\LearnAdminBackend.Repositories\\LearnAdmin.Repositories.csproj"
               }
             }
           }
@@ -146,6 +205,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -162,42 +226,63 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.316/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdminBackend.Repositories/LearnAdmin.Repositories.csproj": {
+    "D:\\work\\learn-admin-backend\\LearnAdminBackend.Repositories\\LearnAdmin.Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdminBackend.Repositories/LearnAdmin.Repositories.csproj",
+        "projectUniqueName": "D:\\work\\learn-admin-backend\\LearnAdminBackend.Repositories\\LearnAdmin.Repositories.csproj",
         "projectName": "LearnAdmin.Repositories",
-        "projectPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdminBackend.Repositories/LearnAdmin.Repositories.csproj",
-        "packagesPath": "/Users/agradium/.nuget/packages/",
-        "outputPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdminBackend.Repositories/obj/",
+        "projectPath": "D:\\work\\learn-admin-backend\\LearnAdminBackend.Repositories\\LearnAdmin.Repositories.csproj",
+        "packagesPath": "C:\\Users\\20438\\.nuget\\packages\\",
+        "outputPath": "D:\\work\\learn-admin-backend\\LearnAdminBackend.Repositories\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/agradium/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\20438\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "D:\\nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.IRepositories/LearnAdmin.IRepositories.csproj": {
-                "projectPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.IRepositories/LearnAdmin.IRepositories.csproj"
+              "D:\\work\\learn-admin-backend\\LearnAdmin.IRepositories\\LearnAdmin.IRepositories.csproj": {
+                "projectPath": "D:\\work\\learn-admin-backend\\LearnAdmin.IRepositories\\LearnAdmin.IRepositories.csproj"
               },
-              "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Model/LearnAdmin.Model.csproj": {
-                "projectPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Model/LearnAdmin.Model.csproj"
+              "D:\\work\\learn-admin-backend\\LearnAdmin.Model\\LearnAdmin.Model.csproj": {
+                "projectPath": "D:\\work\\learn-admin-backend\\LearnAdmin.Model\\LearnAdmin.Model.csproj"
               }
             }
           }
@@ -206,6 +291,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -240,12 +330,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.316/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
