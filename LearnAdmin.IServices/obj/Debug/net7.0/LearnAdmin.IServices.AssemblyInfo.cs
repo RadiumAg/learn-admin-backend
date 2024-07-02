@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LearnAdmin.IServices")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d4736974d0f3506d7fe164133ae6d1b86aca39a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b3b2ae2943332573603925887b95e1a734bc388")]
 [assembly: System.Reflection.AssemblyProductAttribute("LearnAdmin.IServices")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LearnAdmin.IServices")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
