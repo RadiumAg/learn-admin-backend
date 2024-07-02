@@ -1,13 +1,12 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace LearnAdmin.Repositories
 {
-	public class LearnAdminContext:DbContext
-	{
-		public LearnAdminContext()
-		{
-		}
-	}
+    public class LearnAdminContext : DbContext
+    {
+        public LearnAdminContext()
+        {
+        }
+    }
 }
 
