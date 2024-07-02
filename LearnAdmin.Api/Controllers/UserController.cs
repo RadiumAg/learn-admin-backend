@@ -1,5 +1,4 @@
-﻿using LearnAdmin.Database;
-using LearnAdmin.Dto.User;
+﻿using LearnAdmin.Dto.User;
 using LearnAdmin.Share;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
@@ -7,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
+using LearnAdmin.Repositories;
+using LearnAdmin.Model.Models;
 
 namespace LearnAdmin.Controllers
 {
@@ -34,7 +35,6 @@ namespace LearnAdmin.Controllers
                 Password = userData.Password,
             };
 
-            this.learnAdminContex.Users.Add(user);
             this.learnAdminContex.SaveChanges();
 
             return Success();
