@@ -5,12 +5,8 @@ namespace LearnAdmin.Repositories
 {
     public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class, new()
     {
-        private readonly LearnAdminContext _dbContext;
+        private readonly LearnAdminContext _dbContext = new LearnAdminContext();
 
-        public BaseRepository(LearnAdminContext dbConterxt)
-        {
-            this._dbContext = dbConterxt;
-        }
 
         /// <summary>
         /// 功能描述：根据实体删除一条数据
