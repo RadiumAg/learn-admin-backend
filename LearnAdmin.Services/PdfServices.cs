@@ -3,7 +3,7 @@ using LearnAdmin.Model.Models;
 
 namespace LearnAdmin.Services
 {
-    internal class PdfServices: BaseServices<Pdf>, IPdfServices
+  public class PdfServices : BaseServices<Pdf>, IPdfServices
   {
 
   }

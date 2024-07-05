@@ -32,12 +32,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.20" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LearnAdmin.Services\LearnAdmin.Services.csproj">
+    <ProjectReference Include="..\LearnAdmin.Extensions\LearnAdmin.Extensions.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\LearnAdmin.Common\LearnAdmin.Common.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
     <ProjectReference Include="..\LearnAdmin.Model\LearnAdmin.Model.csproj">
@@ -71,7 +73,6 @@
     <None Remove="LearnAdmin.IServices\obj\Debug\net7.0\LearnAdmin.IServices.GeneratedMSBuildEditorConfig.editorconfig" />
     <None Remove="LearnAdmin.IServices\obj\Debug\net7.0\LearnAdmin.IServices.csproj.AssemblyReference.cache" />
     <None Remove="LearnAdmin.IServices\obj\Debug\net7.0\LearnAdmin.IServices.assets.cache" />
-
     <None Remove="LearnAdmin.Services\obj\Debug\net7.0\LearnAdmin.Services.AssemblyInfoInputs.cache" />
     <None Remove="LearnAdmin.Services\obj\Debug\net7.0\LearnAdmin.Services.assets.cache" />
     <None Remove="LearnAdmin.Services\obj\LearnAdmin.Services.csproj.nuget.g.props" />

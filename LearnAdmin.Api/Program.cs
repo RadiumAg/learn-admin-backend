@@ -1,10 +1,12 @@
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
+using LearnAdmin.Extensions;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
 builder.Services.AddControllers((options) =>
 {
     options.SuppressAsyncSuffixInActionNames = true;
@@ -12,13 +14,9 @@ builder.Services.AddControllers((options) =>
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<LearnAdminContext>(dbContext =>
+builder.Host.ConfigureContainer((ContainerBuilder builder) =>
 {
-    var serverVersion = new MySqlServerVersion(new Version(8, 0, 36));
-    dbContext.UseMySql(builder.Configuration["database:connection"], serverVersion)
-    .LogTo(Console.WriteLine, LogLevel.Information)
-    .EnableServiceProviderCaching()
-    .EnableDetailedErrors();
+    builder.RegisterModule<AutofacModuleRegister>();
 });
 builder.Services.AddAuthentication((options) =>
 {
@@ -50,8 +48,6 @@ builder.Services.AddAuthentication((options) =>
 });
 
 var app = builder.Build();
-
-app.UseErrorMiddleware();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

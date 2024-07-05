@@ -1,0 +1,12 @@
+/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Common/bin/Debug/net7.0/LearnAdmin.Common.deps.json
+/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Common/bin/Debug/net7.0/LearnAdmin.Common.dll
+/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Common/bin/Debug/net7.0/LearnAdmin.Common.pdb
+/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Common/obj/Debug/net7.0/LearnAdmin.Common.csproj.AssemblyReference.cache
+/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Common/obj/Debug/net7.0/LearnAdmin.Common.GeneratedMSBuildEditorConfig.editorconfig
+/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Common/obj/Debug/net7.0/LearnAdmin.Common.AssemblyInfoInputs.cache
+/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Common/obj/Debug/net7.0/LearnAdmin.Common.AssemblyInfo.cs
+/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Common/obj/Debug/net7.0/LearnAdmin.Common.csproj.CoreCompileInputs.cache
+/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Common/obj/Debug/net7.0/LearnAdmin.Common.dll
+/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Common/obj/Debug/net7.0/refint/LearnAdmin.Common.dll
+/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Common/obj/Debug/net7.0/LearnAdmin.Common.pdb
+/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Common/obj/Debug/net7.0/ref/LearnAdmin.Common.dll

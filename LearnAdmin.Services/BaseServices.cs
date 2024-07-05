@@ -3,7 +3,7 @@ using LearnAdmin.Repositories;
 
 namespace LearnAdmin.Services
 {
-    internal class BaseServices<TEntity> : IBaseServices<TEntity> where TEntity : class, new()
+    public class BaseServices<TEntity> : IBaseServices<TEntity> where TEntity : class, new()
     {
         public IBaseRepository<TEntity> _baseRepository = new BaseRepository<TEntity>();
 

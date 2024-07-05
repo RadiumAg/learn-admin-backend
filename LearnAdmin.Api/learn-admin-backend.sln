@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnAdmin.Services", "..\L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnAdmin.Repositories", "..\LearnAdmin.Repositories\LearnAdmin.Repositories.csproj", "{EBF936BB-EE71-4C4A-9B39-4B7CBE9A4AF1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnAdmin.Extensions", "..\LearnAdmin.Extensions\LearnAdmin.Extensions.csproj", "{9A78E9D9-0D84-478E-93C7-E8BAA1EAD72C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnAdmin.Common", "..\LearnAdmin.Common\LearnAdmin.Common.csproj", "{D3B1E1E0-E3A5-41D8-9215-056DC8F0C8EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{EBF936BB-EE71-4C4A-9B39-4B7CBE9A4AF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBF936BB-EE71-4C4A-9B39-4B7CBE9A4AF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBF936BB-EE71-4C4A-9B39-4B7CBE9A4AF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A78E9D9-0D84-478E-93C7-E8BAA1EAD72C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A78E9D9-0D84-478E-93C7-E8BAA1EAD72C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A78E9D9-0D84-478E-93C7-E8BAA1EAD72C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A78E9D9-0D84-478E-93C7-E8BAA1EAD72C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3B1E1E0-E3A5-41D8-9215-056DC8F0C8EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3B1E1E0-E3A5-41D8-9215-056DC8F0C8EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3B1E1E0-E3A5-41D8-9215-056DC8F0C8EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3B1E1E0-E3A5-41D8-9215-056DC8F0C8EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

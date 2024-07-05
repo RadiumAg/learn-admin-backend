@@ -1,13 +1,5 @@
-﻿<Properties StartupConfiguration="{4BCCA2E4-A985-4DED-90EB-BEC45EE253C6}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <DisabledProjects>
-    <String>LearnAdmin.IRepositories/LearnAdmin.IRepositories.csproj</String>
-    <String>LearnAdmin.IServices/LearnAdmin.IServices.csproj</String>
-    <String>LearnAdmin.Model/LearnAdmin.Model.csproj</String>
-    <String>LearnAdminBackend.Repositories/LearnAdmin.Repositories.csproj</String>
-    <String>LearnAdmin.Services/LearnAdmin.Services.csproj</String>
-  </DisabledProjects>
+﻿<Properties StartupConfiguration="{6F6E7C57-CE57-4DD0-A6D1-CC1342E4B90F}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="../LearnAdminBackend.Repositories/LearnAdminContext.cs">
     <Files>
       <File FileName="../LearnAdmin.IRepositories/IPdfRepository.cs" />
@@ -24,9 +16,17 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <DisabledProjects>
+    <String>LearnAdmin.IRepositories/LearnAdmin.IRepositories.csproj</String>
+    <String>LearnAdmin.IServices/LearnAdmin.IServices.csproj</String>
+    <String>LearnAdmin.Model/LearnAdmin.Model.csproj</String>
+    <String>LearnAdminBackend.Repositories/LearnAdmin.Repositories.csproj</String>
+    <String>LearnAdmin.Services/LearnAdmin.Services.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.ItemProperties.LearnAdmin.Common FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.LearnAdmin.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.LearnAdmin.Extensions FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
 </Properties>
