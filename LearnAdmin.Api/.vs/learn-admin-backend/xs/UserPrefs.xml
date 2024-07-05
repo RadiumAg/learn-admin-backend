@@ -1,21 +1,10 @@
 ﻿<Properties StartupConfiguration="{6F6E7C57-CE57-4DD0-A6D1-CC1342E4B90F}|Default">
+  <MonoDevelop.Ide.ItemProperties.LearnAdmin.Common FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../LearnAdminBackend.Repositories/LearnAdminContext.cs">
-    <Files>
-      <File FileName="../LearnAdmin.IRepositories/IPdfRepository.cs" />
-      <File FileName="../LearnAdminBackend.Repositories/PdfRepository.cs" />
-      <File FileName="../LearnAdminBackend.Repositories/LearnAdminContext.cs" Line="12" Column="1" />
-    </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="learn-admin-backend" expanded="True">
-            <Node name="LearnAdmin.IServices" selected="True" />
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
-  </MonoDevelop.Ide.Workbench>
   <DisabledProjects>
     <String>LearnAdmin.IRepositories/LearnAdmin.IRepositories.csproj</String>
     <String>LearnAdmin.IServices/LearnAdmin.IServices.csproj</String>
@@ -23,10 +12,21 @@
     <String>LearnAdminBackend.Repositories/LearnAdmin.Repositories.csproj</String>
     <String>LearnAdmin.Services/LearnAdmin.Services.csproj</String>
   </DisabledProjects>
-  <MonoDevelop.Ide.ItemProperties.LearnAdmin.Common FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.LearnAdmin.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.LearnAdmin.Extensions FirstBuild="True" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.ItemProperties.LearnAdmin.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../LearnAdmin.IRepositories/IPdfRepository.cs">
+    <Files>
+      <File FileName="../LearnAdmin.IRepositories/IPdfRepository.cs" Line="5" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="learn-admin-backend" expanded="True">
+            <Node name="LearnAdmin.IRepositories" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
 </Properties>

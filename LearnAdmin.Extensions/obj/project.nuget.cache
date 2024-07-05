@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WkwZ3PUJoXCe9oSxSantM0t4KXpUbL4LZGq+sWJKUdAMU6c1gQnGgk93o/23GMxbaX1VOgMRUb21dZIuHUqicA==",
+  "dgSpecHash": "+TzqahPlcJo=",
   "success": true,
   "projectFilePath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Extensions/LearnAdmin.Extensions.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,9 @@
     "/Users/agradium/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
     "/Users/agradium/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "/Users/agradium/.nuget/packages/system.diagnostics.diagnosticsource/7.0.2/system.diagnostics.diagnosticsource.7.0.2.nupkg.sha512",
-    "/Users/agradium/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+    "/Users/agradium/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512",
+    "/Users/agradium/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "/Users/agradium/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512"
   ],
   "logs": []
 }
