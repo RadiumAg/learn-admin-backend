@@ -7,7 +7,7 @@ namespace LearnAdmin.IServices
     /// 服务基类接口
     /// </summary>
     /// <typeparam name="TEntity"></typeparam>
-    internal interface IBaseServices<TEntity> where TEntity : class
+    public interface IBaseServices<TEntity> where TEntity : class, new()
     {
 
         /// <summary>

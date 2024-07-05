@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LearnAdminBackend.Repositories\LearnAdmin.Repositories.csproj" />
-    <ProjectReference Include="..\LearnAdminBackend.IServices\LearnAdmin.Model.csproj" />
+    <ProjectReference Include="..\LearnAdmin.IServices\LearnAdmin.IServices.csproj" />
+    <ProjectReference Include="..\LearnAdmin.Repositories\LearnAdmin.Repositories.csproj" />
   </ItemGroup>
 </Project>

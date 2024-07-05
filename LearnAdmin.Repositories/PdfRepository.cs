@@ -1,4 +1,4 @@
-﻿namespace LearnAdminBackend.Repositories
+﻿namespace LearnAdmin.Repositories
 {
     public class PdfRepository
     {

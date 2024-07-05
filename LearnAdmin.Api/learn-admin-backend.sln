@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnAdmin.Model", "..\Lear
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnAdmin.Services", "..\LearnAdmin.Services\LearnAdmin.Services.csproj", "{290F8108-A00F-4D9A-B6FC-65606D0EFA29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnAdmin.Repositories", "..\LearnAdminBackend.Repositories\LearnAdmin.Repositories.csproj", "{EBF936BB-EE71-4C4A-9B39-4B7CBE9A4AF1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnAdmin.Repositories", "..\LearnAdmin.Repositories\LearnAdmin.Repositories.csproj", "{EBF936BB-EE71-4C4A-9B39-4B7CBE9A4AF1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

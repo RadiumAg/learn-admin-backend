@@ -7,7 +7,6 @@ namespace LearnAdmin.Repositories
     {
         private readonly LearnAdminContext _dbContext = new LearnAdminContext();
 
-
         /// <summary>
         /// 功能描述：根据实体删除一条数据
         /// </summary>
@@ -24,7 +23,6 @@ namespace LearnAdmin.Repositories
                 await _dbContext.SaveChangesAsync(cancellationToken);
             }
         }
-
 
         /// <summary>
         /// 功能描述：根据筛选条件删除数据
