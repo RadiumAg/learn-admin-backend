@@ -16,7 +16,6 @@ namespace LearnAdmin.Controllers
             };
         }
 
-
         [NonAction]
         public MessageModel<T> Fail<T>(T data, string msg = "失败")
         {

@@ -1,7 +1,7 @@
 ﻿
 namespace LearnAdmin.Dto.Pdf
 {
-    public class CreatePdpsDto
+    public class CreatePDPsDto
     {
         /// <summary>
         /// 名称
@@ -15,7 +15,7 @@ namespace LearnAdmin.Dto.Pdf
     }
 
 
-    public class CreatePdpsResponseDto
+    public class CreatePDPsResponseDto
     {
         public int Id { get; set; }
 
