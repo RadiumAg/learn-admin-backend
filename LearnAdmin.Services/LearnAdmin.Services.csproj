@@ -7,5 +7,6 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\LearnAdminBackend.Repositories\LearnAdmin.Repositories.csproj" />
+    <ProjectReference Include="..\LearnAdminBackend.IServices\LearnAdmin.Model.csproj" />
   </ItemGroup>
 </Project>

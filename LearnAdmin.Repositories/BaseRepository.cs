@@ -56,6 +56,7 @@ namespace LearnAdmin.Repositories
                 await _dbContext.SaveChangesAsync(cancellationToken);
             }
         }
+        
         /// <summary>
         /// 功能描述：更具筛选条件获取一条数据（如果不存在返回Null）
         /// </summary>
@@ -66,7 +67,6 @@ namespace LearnAdmin.Repositories
         {
             return _dbContext.Set<TEntity>().Where(predicate).SingleOrDefaultAsync(cancellationToken);
         }
-
 
         /// <summary>
         /// 功能描述：根据筛选条件获取一条数据（如果不存在抛出异常）
@@ -85,7 +85,6 @@ namespace LearnAdmin.Repositories
 
             return entity;
         }
-
 
         /// <summary>
         /// 功能描述: 根据筛选条件获取筛选数据条数

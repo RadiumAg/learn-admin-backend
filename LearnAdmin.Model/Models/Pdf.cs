@@ -2,7 +2,6 @@
 {
     public class Pdf
     {
-
         /// <summary>
         /// Id
         /// </summary>
