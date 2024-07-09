@@ -1,11 +1,7 @@
 ﻿namespace LearnAdmin.Model.Models
 {
-    public class Pdf
+    public class Pdf:RootEntityTkey<int>
     {
-        /// <summary>
-        /// Id
-        /// </summary>
-        public int Id { get; set; }
 
         /// <summary>
         /// 名称

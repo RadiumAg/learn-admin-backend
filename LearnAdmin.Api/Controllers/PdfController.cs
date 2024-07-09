@@ -1,3 +1,4 @@
+using LearnAdmin.Model.Models;
 using LearnAdmin.Services;
 using LearnAdmin.Share;
 using Microsoft.AspNetCore.Authorization;
@@ -17,5 +18,16 @@ namespace LearnAdmin.Controllers
             this._pdfServices = pdfServices;
         }
 
+
+        /// <summary>
+        /// 获取所有Pdf
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<MessageModel<List<Pdf>>> GetAllPdf()
+        {
+            var result = await _pdfServices.GetListAsync((_) => true);
+            return this.Success(result);
+        }
     }
 }
