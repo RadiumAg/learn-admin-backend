@@ -1,12 +1,7 @@
-﻿namespace LearnAdmin.Model.Models:RootEntityTkey<int>
+﻿namespace LearnAdmin.Model.Models
 {
-    public class User
+    public class User : RootEntityTkey<int>
     {
-
-        /// <summary>
-        ///  Id
-        /// </summary>
-        public int Id { get; set; }
 
         /// <summary>
         /// 账号
