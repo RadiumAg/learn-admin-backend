@@ -1,5 +1,4 @@
 ﻿<Properties StartupConfiguration="{6F6E7C57-CE57-4DD0-A6D1-CC1342E4B90F}|Default">
-  <MonoDevelop.Ide.ItemProperties.LearnAdmin.Common FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -12,19 +11,42 @@
     <String>LearnAdminBackend.Repositories/LearnAdmin.Repositories.csproj</String>
     <String>LearnAdmin.Services/LearnAdmin.Services.csproj</String>
   </DisabledProjects>
-  <MonoDevelop.Ide.ItemProperties.LearnAdmin.Extensions FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.LearnAdmin.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../LearnAdmin.IRepositories/IPdfRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../LearnAdmin.Extensions/AOP/LearnAdminCacheAop.cs">
     <Files>
-      <File FileName="../LearnAdmin.IRepositories/IPdfRepository.cs" Line="5" Column="2" />
+      <File FileName="../LearnAdmin.Extensions/AOP/BbsLogAop.cs" Line="14" Column="1" />
+      <File FileName="../LearnAdmin.Extensions/AutofacModuleRegister.cs" Line="12" Column="43" />
+      <File FileName="../LearnAdmin.Common/MemoryCache/ICachingProvider.cs" Line="12" Column="1" />
+      <File FileName="../LearnAdmin.Common/MemoryCache/MemoryCachingProvider.cs" Line="16" Column="41" />
+      <File FileName="../LearnAdmin.Extensions/AOP/LearnAdminCacheAop.cs" Line="10" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="learn-admin-backend" expanded="True">
-            <Node name="LearnAdmin.IRepositories" expanded="True" />
+            <Node name="LearnAdmin.API" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True">
+                  <Node name="Aliyun.OSS.SDK" expanded="True" />
+                  <Node name="Swashbuckle.AspNetCore" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Share" expanded="True" />
+            </Node>
+            <Node name="LearnAdmin.Common" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+              </Node>
+              <Node name="MemoryCache" expanded="True" />
+            </Node>
+            <Node name="LearnAdmin.Extensions" expanded="True">
+              <Node name="AOP" expanded="True" />
+            </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
