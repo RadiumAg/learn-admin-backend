@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LearnAdmin.Extensions")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2204d7d2188587ee3afdafce030cf41276830f6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+858115b5d7c8321d031e1c3923c040c3c59ccf69")]
 [assembly: System.Reflection.AssemblyProductAttribute("LearnAdmin.Extensions")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LearnAdmin.Extensions")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

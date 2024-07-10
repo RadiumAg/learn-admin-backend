@@ -14,4 +14,10 @@
     <ProjectReference Include="..\LearnAdmin.Services\LearnAdmin.Services.csproj" />
     <ProjectReference Include="..\LearnAdmin.Repositories\LearnAdmin.Repositories.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="AOP\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AOP\" />
+  </ItemGroup>
 </Project>
