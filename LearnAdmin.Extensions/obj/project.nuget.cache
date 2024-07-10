@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2ZQWq76NdTo=",
+  "dgSpecHash": "6kKudHe0BGBBjIzl3/7wBREVjFEor0OG/cNXqDcpIUAeFVKEl3vYhF8mopsb7akeyx0wfNRtsgK1oJO24sVCyQ==",
   "success": true,
   "projectFilePath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Extensions/LearnAdmin.Extensions.csproj",
   "expectedPackageFiles": [
@@ -24,9 +24,7 @@
     "/Users/agradium/.nuget/packages/mysqlconnector/2.2.5/mysqlconnector.2.2.5.nupkg.sha512",
     "/Users/agradium/.nuget/packages/pomelo.entityframeworkcore.mysql/7.0.0/pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
     "/Users/agradium/.nuget/packages/system.diagnostics.diagnosticsource/7.0.2/system.diagnostics.diagnosticsource.7.0.2.nupkg.sha512",
-    "/Users/agradium/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512",
-    "/Users/agradium/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
-    "/Users/agradium/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512"
+    "/Users/agradium/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

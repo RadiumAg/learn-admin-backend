@@ -10,6 +10,7 @@
         "dependencies": {
           "Autofac.Extensions.DependencyInjection": "9.0.0",
           "Autofac.Extras.DynamicProxy": "7.1.0",
+          "LearnAdmin.Common": "1.0.0",
           "LearnAdmin.Repositories": "1.0.0",
           "LearnAdmin.Services": "1.0.0"
         },
@@ -240,6 +241,14 @@
           }
         }
       },
+      "LearnAdmin.Common/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Memory": "7.0.0"
+        },
+        "runtime": {
+          "LearnAdmin.Common.dll": {}
+        }
+      },
       "LearnAdmin.IRepositories/1.0.0": {
         "dependencies": {
           "LearnAdmin.Model": "1.0.0"
@@ -436,6 +445,11 @@
       "sha512": "sha512-lcyUiXTsETK2ALsZrX+nWuHSIQeazhqPphLfaRxzdGaG93+0kELqpgEHtwWOlQe7+jSFnKwaCAgL4kjeZCQJnw==",
       "path": "system.diagnostics.eventlog/6.0.0",
       "hashPath": "system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+    },
+    "LearnAdmin.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "LearnAdmin.IRepositories/1.0.0": {
       "type": "project",

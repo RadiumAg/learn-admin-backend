@@ -372,6 +372,19 @@
           }
         }
       },
+      "LearnAdmin.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Memory": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LearnAdmin.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LearnAdmin.Common.dll": {}
+        }
+      },
       "LearnAdmin.IRepositories/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -987,6 +1000,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "LearnAdmin.Common/1.0.0": {
+      "type": "project",
+      "path": "../LearnAdmin.Common/LearnAdmin.Common.csproj",
+      "msbuildProject": "../LearnAdmin.Common/LearnAdmin.Common.csproj"
+    },
     "LearnAdmin.IRepositories/1.0.0": {
       "type": "project",
       "path": "../LearnAdmin.IRepositories/LearnAdmin.IRepositories.csproj",
@@ -1017,6 +1035,7 @@
     "net7.0": [
       "Autofac.Extensions.DependencyInjection >= 9.0.0",
       "Autofac.Extras.DynamicProxy >= 7.1.0",
+      "LearnAdmin.Common >= 1.0.0",
       "LearnAdmin.Repositories >= 1.0.0",
       "LearnAdmin.Services >= 1.0.0"
     ]
@@ -1046,6 +1065,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Common/LearnAdmin.Common.csproj": {
+              "projectPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Common/LearnAdmin.Common.csproj"
+            },
             "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Repositories/LearnAdmin.Repositories.csproj": {
               "projectPath": "/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Repositories/LearnAdmin.Repositories.csproj"
             },
@@ -1059,11 +1081,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -1090,22 +1107,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.20, 7.0.20]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.20, 7.0.20]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.316/RuntimeIdentifierGraph.json"
       }
     }
   }

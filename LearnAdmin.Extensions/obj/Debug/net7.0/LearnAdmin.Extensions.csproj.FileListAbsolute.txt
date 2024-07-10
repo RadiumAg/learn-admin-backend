@@ -21,3 +21,5 @@
 /Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Extensions/obj/Debug/net7.0/refint/LearnAdmin.Extensions.dll
 /Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Extensions/obj/Debug/net7.0/LearnAdmin.Extensions.pdb
 /Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Extensions/obj/Debug/net7.0/ref/LearnAdmin.Extensions.dll
+/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Extensions/bin/Debug/net7.0/LearnAdmin.Common.dll
+/Users/agradium/Desktop/work/learn-admin-backend/LearnAdmin.Extensions/bin/Debug/net7.0/LearnAdmin.Common.pdb

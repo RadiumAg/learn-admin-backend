@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\LearnAdmin.Services\LearnAdmin.Services.csproj" />
     <ProjectReference Include="..\LearnAdmin.Repositories\LearnAdmin.Repositories.csproj" />
+    <ProjectReference Include="..\LearnAdmin.Common\LearnAdmin.Common.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="AOP\" />
