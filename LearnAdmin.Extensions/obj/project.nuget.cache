@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Dg/yDI2XsS7R49tPeC+UZipFFUF7TfFkJjFgWI1LuKHv38tSPwjwxMKnZCBKSI5vctbMnDqoYGz4a2NHiGKuzg==",
+  "dgSpecHash": "o3i76ZcHeaQRa+Bn5uveYebaqla62iw46iOiEnAdwbVTDPAhzoAlJhUWDCQw7j8rkmmfwl9HMO4hPCrol5unlg==",
   "success": true,
   "projectFilePath": "D:\\work\\learn-admin-backend\\LearnAdmin.Extensions\\LearnAdmin.Extensions.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\20438\\.nuget\\packages\\autofac\\8.0.0\\autofac.8.0.0.nupkg.sha512",
     "C:\\Users\\20438\\.nuget\\packages\\autofac.extensions.dependencyinjection\\9.0.0\\autofac.extensions.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\20438\\.nuget\\packages\\autofac.extras.dynamicproxy\\7.1.0\\autofac.extras.dynamicproxy.7.1.0.nupkg.sha512",
+    "C:\\Users\\20438\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\20438\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\20438\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.20\\microsoft.entityframeworkcore.7.0.20.nupkg.sha512",
     "C:\\Users\\20438\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.20\\microsoft.entityframeworkcore.abstractions.7.0.20.nupkg.sha512",
