@@ -1,6 +1,7 @@
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using LearnAdmin.Extensions;
+using LearnAdmin.Extensions.ServiceExtensions;
 using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,6 +19,7 @@ builder.Host.ConfigureContainer((ContainerBuilder builder) =>
 {
     builder.RegisterModule<AutofacModuleRegister>();
 });
+builder.Services.AddAutoMapperSetup();
 builder.Services.AddAuthentication((options) =>
 {
     options.RequireAuthenticatedSignIn = false;

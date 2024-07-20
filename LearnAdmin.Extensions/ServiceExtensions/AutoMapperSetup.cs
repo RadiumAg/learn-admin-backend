@@ -10,10 +10,6 @@ namespace LearnAdmin.Extensions.ServiceExtensions
             if (services == null) throw new ArgumentNullException(nameof(services));
             services.AddAutoMapper(typeof(AutoMapperConfig));
         }
-
-        public static void ConfigureServices(IServiceCollection services)
-        {
-        }
     }
 
     public class AutoMapperConfig
