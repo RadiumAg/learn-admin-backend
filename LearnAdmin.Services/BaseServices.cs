@@ -5,7 +5,12 @@ namespace LearnAdmin.Services
 {
     public class BaseServices<TEntity> : IBaseServices<TEntity> where TEntity : class, new()
     {
-        public IBaseRepository<TEntity> _baseRepository = new BaseRepository<TEntity>();
+        public BaseServices(IBaseRepository<TEntity> baseRepository)
+        {
+            this._baseRepository = baseRepository;
+        }
+
+        private readonly IBaseRepository<TEntity> _baseRepository;
 
         /// <summary>
         /// 功能描述：根据实体删除一条数据
@@ -120,7 +125,7 @@ namespace LearnAdmin.Services
         /// <returns></returns>
         public Task InsertManyAsync(IEnumerable<TEntity> entities, bool autoSave = false, CancellationToken cancellationToken = default)
         {
-           return _baseRepository.InsertManyAsync(entities, autoSave, cancellationToken);
+            return _baseRepository.InsertManyAsync(entities, autoSave, cancellationToken);
         }
 
         /// <summary>
@@ -132,7 +137,7 @@ namespace LearnAdmin.Services
         /// <returns></returns>
         public Task<TEntity> UpdateAsync(TEntity entity, bool autoSave = false, CancellationToken cancellationToken = default)
         {
-           return _baseRepository.UpdateAsync(entity, autoSave, cancellationToken);
+            return _baseRepository.UpdateAsync(entity, autoSave, cancellationToken);
         }
 
         /// <summary>

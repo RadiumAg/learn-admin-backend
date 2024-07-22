@@ -10,10 +10,10 @@ namespace LearnAdmin.Extensions
         {
             // builder.RegisterType<PdfServices>().As<IPdfServices>();
             builder.RegisterType<LearnAdminLogLogAop>();
+            var assemblyRepository = Assembly.Load("LearnAdmin.Repositories");
+            builder.RegisterAssemblyTypes(assemblyRepository).AsImplementedInterfaces();
             var assemblyServices = Assembly.Load("LearnAdmin.Services");
             builder.RegisterAssemblyTypes(assemblyServices).AsImplementedInterfaces();
-            var assemblyREpository = Assembly.Load("LearnAdmin.Repositories");
-            builder.RegisterAssemblyTypes(assemblyREpository).AsImplementedInterfaces();
         }
     }
 }

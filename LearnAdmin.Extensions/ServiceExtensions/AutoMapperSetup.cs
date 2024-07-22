@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 
 namespace LearnAdmin.Extensions.ServiceExtensions
 {
@@ -9,17 +8,6 @@ namespace LearnAdmin.Extensions.ServiceExtensions
         {
             if (services == null) throw new ArgumentNullException(nameof(services));
             services.AddAutoMapper(typeof(AutoMapperConfig));
-        }
-    }
-
-    public class AutoMapperConfig
-    {
-        public static MapperConfiguration RegisterMappings()
-        {
-            return new MapperConfiguration(cfg =>
-            {
-                cfg.AddProfile(new UserInfoProfile());
-            });
         }
     }
 }

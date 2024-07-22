@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using LearnAdmin.Dto.User;
+using LearnAdmin.Model.Models;
 
 namespace LearnAdmin.Extensions
 {
@@ -9,6 +11,7 @@ namespace LearnAdmin.Extensions
         /// </summary>
         public UserInfoProfile()
         {
+            CreateMap<CreateUserInfoDto, User>();
         }
     }
 }

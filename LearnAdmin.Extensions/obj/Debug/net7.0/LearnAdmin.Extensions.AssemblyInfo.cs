@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LearnAdmin.Extensions")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4fbd0eac61e1e20f200cc629c19ab80d7e595f3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+851609a31e617ac5aff6c56423a456dabce72880")]
 [assembly: System.Reflection.AssemblyProductAttribute("LearnAdmin.Extensions")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LearnAdmin.Extensions")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

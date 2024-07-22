@@ -5,7 +5,12 @@ namespace LearnAdmin.Repositories
 {
     public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class, new()
     {
-        private readonly LearnAdminContext _dbContext = new LearnAdminContext();
+        public BaseRepository(LearnAdminContext dbContext)
+        {
+            this._dbContext = dbContext;
+        }
+
+        private readonly LearnAdminContext _dbContext;
 
         /// <summary>
         /// 功能描述：根据实体删除一条数据
@@ -54,7 +59,7 @@ namespace LearnAdmin.Repositories
                 await _dbContext.SaveChangesAsync(cancellationToken);
             }
         }
-        
+
         /// <summary>
         /// 功能描述：更具筛选条件获取一条数据（如果不存在返回Null）
         /// </summary>
