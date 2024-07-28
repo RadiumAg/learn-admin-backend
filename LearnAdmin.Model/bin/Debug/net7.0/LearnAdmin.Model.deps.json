@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "LearnAdmin.Model/1.0.0": {
         "dependencies": {
+          "LearnAdmin.Common": "1.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.20"
         },
         "runtime": {
@@ -211,6 +212,14 @@
         "dependencies": {
           "System.Text.Encodings.Web": "7.0.0"
         }
+      },
+      "LearnAdmin.Common/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Memory": "7.0.0"
+        },
+        "runtime": {
+          "LearnAdmin.Common.dll": {}
+        }
       }
     }
   },
@@ -366,6 +375,11 @@
       "sha512": "sha512-DaGSsVqKsn/ia6RG8frjwmJonfos0srquhw09TlT8KRw5I43E+4gs+/bZj4K0vShJ5H9imCuXupb4RmS+dBy3w==",
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
+    },
+    "LearnAdmin.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

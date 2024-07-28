@@ -1,10 +1,16 @@
-﻿namespace LearnAdmin.Dto.User
+﻿using LearnAdmin.Share;
+using System.ComponentModel.DataAnnotations;
+
+namespace LearnAdmin.Dto.User
 {
     public class GetUserInfoDto
     {
-        public string? Account { get; set; }
+        [Required(ErrorMessage = "Name is required.")]
+        public string Account { get; set; }
 
-        public string? Password { get; set; }
+
+        [Required(ErrorMessage = "Name is required.")]
+        public string Password { get; set; }
     }
 
 
@@ -14,24 +20,32 @@
         /// <summary>
         /// 账号
         /// </summary>
-        public string? Account { get; set; }
+        [Required(ErrorMessage = "Account is required.")]
+        public string Account { get; set; }
 
         /// <summary>
         /// 名称
         /// </summary>
-        public string? Name { get; set; }
+        [Required(ErrorMessage = "Name is required.")]
+        public string Name { get; set; }
 
         /// <summary>
         /// 邮箱
         /// </summary>
-
-        public string? Email { get; set; }
+        [Required(ErrorMessage = "Email is required.")]
+        public string Email { get; set; }
 
         /// <summary>
         /// 密码
         /// </summary>
+        [Required(ErrorMessage = "Password is required.")]
+        public string Password { get; set; }
 
-        public string? Password { get; set; }
+        /// <summary>
+        /// 角色
+        /// </summary>
+        [Required(ErrorMessage = "Role is required.")]
+        public EUserRole Role { get; set; }
 
     }
 }

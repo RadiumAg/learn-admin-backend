@@ -414,7 +414,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\work\\learn-admin-backend\\LearnAdmin.Common\\LearnAdmin.Common.csproj": {
+                "projectPath": "D:\\work\\learn-admin-backend\\LearnAdmin.Common\\LearnAdmin.Common.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

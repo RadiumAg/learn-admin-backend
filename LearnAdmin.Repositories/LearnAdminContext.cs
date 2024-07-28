@@ -9,6 +9,16 @@ namespace LearnAdmin.Repositories
         {
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Role>()
+                .HasMany<User>()
+                .WithOne(e => e.Role)
+                .OnDelete(DeleteBehavior.Restrict);
+        }
+
+        public DbSet<Role> roles { get; set; }
+
         public DbSet<User> User { get; set; }
 
         public DbSet<Pdf> Pdf { get; set; }

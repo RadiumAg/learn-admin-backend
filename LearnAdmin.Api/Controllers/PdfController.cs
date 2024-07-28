@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace LearnAdmin.Controllers
 {
-    [Authorize(Roles = nameof(Role.Administrator))]
+    [Authorize(Roles = nameof(EUserRole.Administrator))]
     [ApiController]
     [Route("api/[controller]")]
     public class PdfController : BaseController

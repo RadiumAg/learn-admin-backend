@@ -24,5 +24,10 @@
         /// </summary>
 
         public string? Password { get; set; }
+
+        /// <summary>
+        /// 用户角色
+        /// </summary>
+        public Role? Role { get; set; }
     }
 }

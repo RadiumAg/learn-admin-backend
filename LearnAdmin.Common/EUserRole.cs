@@ -1,6 +1,6 @@
 ﻿namespace LearnAdmin.Share
 {
-    public enum Role
+    public enum EUserRole
     {
         Administrator,
         User

@@ -343,6 +343,9 @@
         }
       },
       "LearnAdmin.Model/1.0.0": {
+        "dependencies": {
+          "LearnAdmin.Common": "1.0.0"
+        },
         "runtime": {
           "LearnAdmin.Model.dll": {}
         }
