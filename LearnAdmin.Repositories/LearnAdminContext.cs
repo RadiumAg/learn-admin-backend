@@ -11,14 +11,22 @@ namespace LearnAdmin.Repositories
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<User>().Ignore(u => u.Role);
-        } 
+            modelBuilder.Entity<Role>()
+                .Ignore(u => u.User)
+                .HasMany(u => u.User)
+                .WithMany(r => r.Role)
+                .UsingEntity<UserRole>()
+                .Ignore(ur => ur.Role)
+                .Ignore(ur => ur.User);
+        }
 
-        public DbSet<Role> Roles { get; set; }
+        public DbSet<Role> Role { get; set; }
 
         public DbSet<User> User { get; set; }
 
         public DbSet<Pdf> Pdf { get; set; }
+
+        public DbSet<UserRole> UserRole { get; set; }
 
     }
 }

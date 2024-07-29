@@ -11,8 +11,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Class1.cs" />
-    <Compile Remove="Migrations\20240618155945_usekey.Designer.cs" />
-    <Compile Remove="Migrations\20240618155945_usekey.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.20" />

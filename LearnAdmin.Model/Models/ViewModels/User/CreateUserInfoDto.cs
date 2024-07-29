@@ -33,7 +33,7 @@ namespace LearnAdmin.Model.Models.ViewModels.User
         /// 角色
         /// </summary>
         [Required(ErrorMessage = "Role is required.")]
-        public EUserRole RoleId { get; set; }
+        public List<int> RoleId { get; set; }
 
     }
 }

@@ -11,7 +11,8 @@ namespace LearnAdmin.Extensions
         /// </summary>
         public UserInfoProfile()
         {
-            CreateMap<CreateUserInfoDto, User>();
+            CreateMap<CreateUserInfoDto, User>()
+                .ForMember(dest => dest.Role, opt => opt.Ignore());
         }
     }
 }

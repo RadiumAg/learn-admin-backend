@@ -3,9 +3,9 @@ using LearnAdmin.Model.Models;
 
 namespace LearnAdmin.Repositories
 {
-    internal class UesrRepository : BaseRepository<User>
+    internal class UserRepository : BaseRepository<User>
     {
-        public UesrRepository(LearnAdminContext dbContext) : base(dbContext)
+        public UserRepository(LearnAdminContext dbContext) : base(dbContext)
         {
         }
     }

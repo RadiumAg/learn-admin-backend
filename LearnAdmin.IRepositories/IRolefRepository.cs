@@ -3,7 +3,7 @@ using LearnAdmin.Repositories;
 
 namespace LearnAdmin.IRepositories
 {
-	public interface IPdfRepository: IBaseRepository<User>
+	public interface IRoleRepository: IBaseRepository<Role>
 	{
 		
 	} 

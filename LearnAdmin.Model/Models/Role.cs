@@ -14,5 +14,10 @@ namespace LearnAdmin.Model.Models
         /// 角色对应的枚举类型
         /// </summary>
         public EUserRole RoleNumber { get; set; }
+
+        /// <summary>
+        /// 角色拥有的用户
+        /// </summary>
+        public List<User> User { get; set; }
     }
 }

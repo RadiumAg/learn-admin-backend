@@ -21,12 +21,19 @@ namespace LearnAdmin.Controllers
         private readonly IMapper _mapper;
         private readonly DbContext _dbContext;
         private readonly IUserServices _userServices;
+        private readonly IRoleServices _roleServices;
 
-        public UserController(IUserServices userServices, LearnAdminContext dbContext, IMapper mapper)
+
+        public UserController(
+            IUserServices userServices, 
+            IRoleServices roleServices,
+            LearnAdminContext dbContext,
+            IMapper mapper)
         {
             this._mapper = mapper;
             this._dbContext = dbContext;
             this._userServices = userServices;
+            this._roleServices = roleServices;
         }
 
         /// <summary>
@@ -67,6 +74,9 @@ namespace LearnAdmin.Controllers
         public async Task<MessageModel<User>> CreateUserInfo([FromBody] CreateUserInfoDto user)
         {
             var userInfo = _mapper.Map<User>(user);
+            var RoleArray = await this._roleServices.GetListAsync(role => user.RoleId.Contains(role.Id));
+            userInfo.Role = RoleArray;
+
             using (var tranisition = _dbContext.Database.BeginTransaction())
             {
                 await this._userServices.InsertAsync(userInfo, true);

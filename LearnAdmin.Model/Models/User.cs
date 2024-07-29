@@ -26,11 +26,6 @@
         /// <summary>
         /// 用户角色
         /// </summary>
-        public Role? Role { get; set; }
-
-        /// <summary>
-        /// 角色外键
-        /// </summary>
-        public int? RoleId { get; set; }
+        public List<Role>? Role { get; set; }
     }
 }
