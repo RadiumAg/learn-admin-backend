@@ -14,7 +14,8 @@ namespace LearnAdmin.Repositories
             modelBuilder.Entity<Role>()
                 .HasMany<User>()
                 .WithOne(e => e.Role)
-                .OnDelete(DeleteBehavior.Restrict);
+                .HasForeignKey(e => e.Role)
+                .IsRequired(false);
         }
 
         public DbSet<Role> roles { get; set; }
