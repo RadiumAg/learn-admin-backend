@@ -2,6 +2,7 @@
 using LearnAdmin.Dto.User;
 using LearnAdmin.IServices;
 using LearnAdmin.Model.Models;
+using LearnAdmin.Model.Models.ViewModels.User;
 using LearnAdmin.Repositories;
 using LearnAdmin.Share;
 using Microsoft.AspNetCore.Authentication;
@@ -81,16 +82,16 @@ namespace LearnAdmin.Controllers
         /// <param name="userId"></param>
         /// <returns></returns>
         [HttpGet("GetUserInfo")]
-        public async Task<MessageModel<User?>> GetUserInfo([FromQuery] long? userId)
+        public async Task<MessageModel<User>> GetUserInfo([FromQuery] long? userId)
         {
             string? userIdFromCookie;
             HttpContext.Request.Cookies.TryGetValue("Id", out userIdFromCookie);
-
-            if (userIdFromCookie == null)
-                return Fail<User?>(new User(), "获得信息失败");
-
             userId = userId ?? Convert.ToInt64(userIdFromCookie);
-            var userInfo = await _userServices.FindAsync(user => user.Id == userId);
+            var userInfo = await _userServices.GetAsync(user => user.Id == userId);
+
+            if (userInfo is null)
+                return Fail<User>(null, "获得信息失败");
+
 
             return Success(userInfo);
         }

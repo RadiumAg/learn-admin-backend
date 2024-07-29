@@ -13,11 +13,4 @@ namespace LearnAdmin.Dto.Pdf
         /// </summary>
         public required string Url { get; set; }
     }
-
-
-    public class CreatePDPsResponseDto
-    {
-        public int Id { get; set; }
-
-    }
 }

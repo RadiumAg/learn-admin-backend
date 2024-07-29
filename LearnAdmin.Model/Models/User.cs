@@ -16,18 +16,21 @@
         /// <summary>
         /// 邮箱
         /// </summary>
-
         public string? Email { get; set; }
 
         /// <summary>
         /// 密码
         /// </summary>
-
         public string? Password { get; set; }
 
         /// <summary>
         /// 用户角色
         /// </summary>
         public Role? Role { get; set; }
+
+        /// <summary>
+        /// 角色外键
+        /// </summary>
+        public int? RoleId { get; set; }
     }
 }

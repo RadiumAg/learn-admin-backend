@@ -11,14 +11,10 @@ namespace LearnAdmin.Repositories
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Role>()
-                .HasMany<User>()
-                .WithOne(e => e.Role)
-                .HasForeignKey(e => e.Role)
-                .IsRequired(false);
-        }
+            modelBuilder.Entity<User>().Ignore(u => u.Role);
+        } 
 
-        public DbSet<Role> roles { get; set; }
+        public DbSet<Role> Roles { get; set; }
 
         public DbSet<User> User { get; set; }
 

@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using LearnAdmin.Dto.User;
 using LearnAdmin.Model.Models;
+using LearnAdmin.Model.Models.ViewModels.User;
 
 namespace LearnAdmin.Extensions
 {
